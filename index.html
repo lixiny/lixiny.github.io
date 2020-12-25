@@ -32,19 +32,17 @@
               <p style="text-align:center">
                 <name>Lixin Yang</name>
               </p>
-              <p>Morning， I’m a 2nd Year PhD student in the Department of <a
+              <p>Morning, I’m a 2nd Year PhD candidate in the Department of <a
                 href="http://www.cs.sjtu.edu.cn/en/"> Computer Science </a> at <a
-                href="http://en.sjtu.edu.cn/"> Shanghai Jiao Tong Universitye </a>.
-              </p>
-              <p> Starting from 2019, I have been in <a
-                href="http://mvig.sjtu.edu.cn/"> MVIG </a> Lab under the supervision of Prof.Cewu Lu. Prior to that, I received my
-                M.S degree from the <a
-                href="https://robolab.sjtu.edu.cn/"> Intelligent Robot Lab </a> in SJTU with advisor Prof.Qixin Cao.
+                href="http://en.sjtu.edu.cn/"> Shanghai Jiao Tong University</a>. Starting from 2019, I have been in <a
+                href="http://mvig.sjtu.edu.cn/"> MVIG </a> Lab under the supervision of Prof. Cewu Lu. Prior to that, I received my
+                M.S degree at the <a
+                href="https://robolab.sjtu.edu.cn/"> Intelligent Robot Lab </a> in SJTU.
             </p>
               <p style="text-align:center">
                 <a href="siriusyang@sjtu.edu.cn">Email</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=&user=Bm8p4JsAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/lixiny"> Github </a> &nbsp/&nbsp
+                <a href="https://github.com/lixiny"> Github </a>
 
               </p>
             </td>
@@ -70,47 +68,49 @@
         <!-- <heading>Publications </heading> -->
           <!-- Paper  -->
 
-            <tr onmouseout="anm_start()" onmouseover="anm_stop()">
+          <tr onmouseout="bihand_stop()" onmouseover="bihand_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bihand_image'>
+                  <img src='images/bihand_after.png' width="160"></div>
+                <img src='images/bihand_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function bihand_start() {
+                  document.getElementById('bihand_image').style.opacity = "1";
+                }
 
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='bihand_image'><img src='images/bihand_1.jpg'></div>
-                  <img src='images/bihand_2.jpg'>
-                </div>
-                <script type="text/javascript">
-                  function anm_start() {
-                    document.getElementById('bihand_image').style.opacity = "1";
-                  }
-
-                  function anm_stop() {
-                    document.getElementById('bihand_image').style.opacity = "0";
-                  }
-                  font_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="TODO">
-                  <papertitle>BiHand: Recovering Hand Mesh with Multi-stage Bisected Hourglass Networks</papertitle>
-                </a>
-                <br>
-                Lixin Yang, Jiasen Li, Wenqiang Xu, Yiqun Diao, Cewu Lu
-                <strong>Lixin Yang</strong>,
-                <br>
-                <em>BMVC</em>, 2020
-                <br>
-                <a href="https://arxiv.org/pdf/2008.05079.pdf">arxiv</a> / <a href="https://github.com/lixiny/bihand">code</a>
-                <p></p>
-                <p>We introduce an end-to-end learnable model, BiHand, to recover hand mesh from hand image.
-                  BiHand adopts a novel bisecting design which allows the networks to encapsulate two closely related information
-                  (e.g. 2D keypoints and silhouette) in a single pass.
-                </p>
-              </td>
+                function bihand_stop() {
+                  document.getElementById('bihand_image').style.opacity = "0";
+                }
+                bihand_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="TODO">
+                <papertitle>BiHand: Recovering Hand Mesh with Multi-stage Bisected Hourglass Networks</papertitle>
+              </a>
+              <br>
+              <strong>Lixin Yang</strong>, Jiasen Li, Wenqiang Xu, Yiqun Diao, Cewu Lu
+              <br>
+              <em>BMVC</em>, 2020
+              <br>
+              <a href="https://arxiv.org/pdf/2008.05079.pdf">arxiv</a> / <a href="https://github.com/lixiny/bihand">code</a>
+              <p></p>
+              <p>We introduce an end-to-end learnable model, BiHand, to recover hand mesh from hand image.
+                BiHand adopts a novel bisecting design which allows the networks to encapsulate two closely related information
+                (e.g. 2D keypoints and silhouette) in a single pass.
+              </p>
+            </td>
             </tr>
 
 
         </tbody></table>
 
-
+        <br>
+        <br>
+        <br>
+        <br>
 </body>
             <p align="right">
               <font size="2">
